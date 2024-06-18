@@ -1,0 +1,14 @@
+/modelo_landing_page.github.io
+    index.html
+    /src
+        src\footer\footer.html
+        src\header
+            src\header\header.css
+            src\header\header.html
+        src\index
+            src\index\style.css
+            src\index\style.css
+        src\jogos_page\
+            src\jogos_page\jogos.css
+            src\jogos_page\jogos.html
+            src\jogos_page\jogos.js

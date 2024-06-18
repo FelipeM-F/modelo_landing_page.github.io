@@ -48,13 +48,16 @@
                 </div>
                 <div class="card" id="epic">
                     <div class="card-content">
-                        <img class="logos" src="/modelo_landing_page.github.io/modelo_landing_page.github.io/src/images/logos/epic.png" alt="Epic">
+                        <img class="logos"
+                            src="/modelo_landing_page.github.io/src/images/logos/epic.png"
+                            alt="Epic">
                         <p>R$ 119,96</p>
                     </div>
                 </div>
                 <div class="card" id="nuuvem">
                     <div class="card-content">
-                        <img class="logos" src="/modelo_landing_page.github.io/src/images/logos/nuuvem.png" alt="nuuvem">
+                        <img class="logos" src="/modelo_landing_page.github.io/src/images/logos/nuuvem.png"
+                            alt="nuuvem">
                         <p>R$ 299,90</p>
                     </div>
                 </div>
@@ -64,28 +67,31 @@
         <div class="container-info">
 
 
-    <div class="info">
-        <div class="info-content">
-            <p>Descubra os melhores preços dos jogos que você mais adora. Busque seus jogos favoritos em um só lugar e compare os preços com as principais lojas do mercado. Descobra onde você pode encontrar os melhores descontos.</p>
-        </div>
-        <div class="info-image">
-            <img src="/modelo_landing_page.github.io/src/images/imagens-geradas/info-img.png" alt="info">
-        </div>
-    </div>
-    <div class="info info2">
-        <div class="info-image info-image2">
-            <img src="/modelo_landing_page.github.io/src/images/imagens-geradas/register-image.png" alt="info">
-        </div>
-        <div class="info-content">
-            <p >Cadastre-separa aproveitar todas as vantagens do nosso site! Adicione seus jogos favoritos à sua lista pessoal, receba alertas de preços especiais e acesse ofertas exclusivas. Não perca nenhuma promoção e fique sempre atualizado com as melhores opções do mercado.</p>
-            <p class="cadastro" onclick="openModal()">Cadastre-se agora </p>
-        </div>
-    </div>
+            <div class="info">
+                <div class="info-content">
+                    <p>Descubra os melhores preços dos jogos que você mais adora. Busque seus jogos favoritos em um só
+                        lugar e compare os preços com as principais lojas do mercado. Descobra onde você pode encontrar
+                        os melhores descontos.</p>
+                </div>
+                <div class="info-image">
+                    <img src="/modelo_landing_page.github.io/src/images/imagens-geradas/info-img.png" alt="info">
+                </div>
+            </div>
+            <div class="info info2">
+                <div class="info-image info-image2">
+                    <img src="/modelo_landing_page.github.io/src/images/imagens-geradas/register-image.png" alt="info">
+                </div>
+                <div class="info-content">
+                    <p>Cadastre-separa aproveitar todas as vantagens do nosso site! Adicione seus jogos favoritos à sua
+                        lista pessoal, receba alertas de preços especiais e acesse ofertas exclusivas. Não perca nenhuma
+                        promoção e fique sempre atualizado com as melhores opções do mercado.</p>
+                    <p class="cadastro" onclick="openModal()">Cadastre-se agora </p>
+                </div>
+            </div>
     </main>
 
     <div id="footer-container"></div>
-    <script>
-        async function loadContent(url, elementId) {
+    <script>async function loadContent(url, elementId) {
             const response = await fetch(url);
             const content = await response.text();
             document.getElementById(elementId).innerHTML = content;
@@ -103,8 +109,7 @@
             });
         }).catch(error => {
             console.error('Error loading content:', error);
-        });
-    </script>
+        });</script>
     <script src="/modelo_landing_page.github.io/src/index/app.js"></script>
 </body>
 
