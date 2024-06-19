@@ -145,6 +145,7 @@ nav ul li a {
   position: fixed;
   top: 50%;
   left: 50%;
+  display: none;
   transform: translate(-50%, -40%);
   display: none;
   background: #010a13a0;
