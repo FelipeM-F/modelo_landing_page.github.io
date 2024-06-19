@@ -146,6 +146,7 @@ nav ul li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+  display: none;
   background: #010a13a0;
   box-shadow: 0px 4px 18px #5681b0;
   padding: 60px;
