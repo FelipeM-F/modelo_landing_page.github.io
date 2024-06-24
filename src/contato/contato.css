@@ -1,0 +1,77 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main { 
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-form {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contact-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border-radius: 4px;
+    padding: 1%;
+    padding-right: 0;
+}
+.contato-enviar {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgb(195, 3, 80);
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contato-enviar:hover {
+    background-color: rgb(254, 61, 106);
+}
+
+.contato-enviar i {
+    margin-right: 5px;
+}
+
+#modal-message {
+    max-width: max-content;
+    position: fixed;
+    padding: 10px;
+    background-color: #323764;
+    top: 20%;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  #message-text {
+    color: white;
+    display: inline;
+  }

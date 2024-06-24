@@ -1,0 +1,27 @@
+
+
+<link rel="stylesheet" href="/modelo_landing_page.github.io/src/modal/modal.css" />
+
+<div id="modal-login" class="modal">
+    <button type="button" class="button close-modal" onclick="closeModal('modal-login')">X</button>
+    <form id="register-form" onsubmit="register(event)">
+        <div id="register-form-group" class="modal-form">
+            <input type="text" id="nickname" name="nickname" placeholder="Username" required />
+            <input type="email" id="email" name="email" placeholder="E-mail" required />
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <button type="submit" class="button">Registrar</button>
+        </div>
+
+    </form>
+    <form id="login-form" onsubmit="login(event)">
+        <div id="login-form-group" class="modal-form">
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="E-mail" required />
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required />
+            <button type="submit" class="button">Entrar</button>
+        </div>
+    </form>
+</div>
+
+<div id="modal-message" class="modal">
+    <p id="message-text"></p>
+</div>

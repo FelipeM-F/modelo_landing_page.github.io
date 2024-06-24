@@ -1,0 +1,75 @@
+
+.modal {
+    max-width: min-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    display: none;
+    background: #051424b7;
+    box-shadow: 0px 0px 20px 15px #11102a;
+    padding: 10px;
+    padding-top: 60px;
+    z-index: 1;
+  }
+  
+  .modal-form {
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+  }
+  
+  .modal-form input {
+    margin: 5px;
+    height: 24px;
+    color: var(--corclara, #000000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .button {
+    margin-top: 20px;
+    border: 2px;
+    border-radius: 10px;
+    cursor: pointer; 
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .button:hover {
+    border: 2px solid #0397ab;
+    box-shadow: 0 0 10px 5px rgba(3, 151, 171, 0.5);
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  #modal-message {
+    max-width: max-content;
+    position: fixed;
+    padding: 10px;
+    background-color: #323764;
+    top: 20%;
+    z-index: 9999;
+    text-align: center;
+  }
+  
+  #message-text {
+    color: white;
+    display: inline;
+  }

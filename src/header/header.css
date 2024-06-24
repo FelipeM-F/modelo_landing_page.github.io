@@ -1,3 +1,9 @@
+body {
+  background-color: #1b2838;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+}
+
 header {
   background-color: #0f0d3d;
   color: white;
@@ -13,7 +19,7 @@ header h1 {
   padding-inline-end: 10%;
   color: white;
   position: relative;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 header i {
@@ -26,23 +32,24 @@ header i {
   cursor: pointer;
 }
 
-
 #user-menu {
   list-style-type: none;
+  right:13%;
+  top: 65%;
   padding: 0;
   margin: 0;
   position: absolute;
-  right: 20px;
-  top: 50px;
-  background-color: #444;
-  border: 1px solid #333;
   width: 150px;
   z-index: 1;
+  background-color: #fff0f0;
+  border: 3px solid rgb(254, 61, 106);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 #user-menu li {
   padding: 10px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid rgb(254, 61, 106);
 }
 
 #user-menu li:last-child {
@@ -50,13 +57,15 @@ header i {
 }
 
 #user-menu a {
-  color: white;
+  color: #0f0d3d;
   text-decoration: none;
+  font-weight: bolder;
   display: block;
 }
 
 #user-menu li:hover {
-  background-color: #555;
+  background-color: rgba(254, 61, 106, 0.4);
+  cursor: pointer;
 }
 
 .hidden {
@@ -68,19 +77,17 @@ header i {
 }
 
 .title-text {
-  display: inline-block; /* Permite a aplicação de transformações */
+  display: inline-block;
   transition: transform 0.8s, color 0.2s;
-  color: inherit; /* Herda a cor do pai */
-  text-decoration: none; /* Remove o sublinhado dos links */
+  color: inherit;
+  text-decoration: none;
 }
 
-
-
 .title-text .highlight {
-  color: #d81818;
+  color: rgb(195, 3, 80);
   background-color: #fff0f0;
   padding: 5px 10px;
-  border: 2px solid #d04c0f;
+  border: 2px solid rgb(254, 61, 106);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   font-weight: bold;
@@ -88,13 +95,11 @@ header i {
   transition: transform 0.8s, background-color 0.2s;
 }
 
-
 .title-text:hover {
   transform: scale(1.1);
-  color: #d81818; 
+  color: rgb(254, 61, 106);
   cursor: pointer;
 }
-
 
 .page-logo {
   display: inline-block;
@@ -104,26 +109,24 @@ header i {
 }
 
 .page-logo a {
-  display: block; /* Garante que o <a> seja um bloco, cobrindo toda a área do filho */
+  display: block;
 }
 
 .page-logo img {
   width: 100px;
-  display: block; /* Remove espaçamento indesejado ao redor da imagem */
+  display: block; 
 }
-
-
 
 nav ul {
   list-style: none;
   padding: 0;
   margin: 10px;
-  text-align: center; /* Centraliza os itens dentro do nav */
+  text-align: center; 
 }
 
 nav ul li {
   display: inline-block;
-  /* Ajuste este valor conforme necessário */
+  
 }
 
 nav ul li a {
@@ -132,71 +135,18 @@ nav ul li a {
   padding: 10px;
 }
 
-/* Remove default link colors */
+nav ul li :hover{
+  color: rgb(254, 61, 106);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+
+
 .title a:link,
 .title a:visited,
 .title a:active {
   text-decoration: none;
 }
 
-
-.modal {
-  max-width:min-content;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  display: none;
-  transform: translate(-50%, -40%);
-  display: none;
-  background: #010a13a0;
-  box-shadow: 0px 4px 18px #5681b0;
-  padding: 60px;
-  z-index: 1;
-}
-
-.modal-form {
-    margin-bottom: 55px;
-    display: block;
-    text-align: center;
-}
-
-.modal-form input {
-    margin: 5px;
-    height: 24px;
-    color: var(--corclara, #eaf4f6);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-
-.button {
-    margin-top: 20px;
-    border: 2px;
-    border-radius: 10px;
-    cursor: pointer;/* Começar */    
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;    
-    text-align: center;
-}
-.button:hover{
-    border: 2px solid #0397AB; 
-    box-shadow: 0 0 10px 5px rgba(3, 151, 171, 0.5); 
-}
-
-.close-modal {
-    position: absolute;  
-    top: 10px;
-    right: 10px;
-    margin: 2px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 20px;
-    line-height: 24px;    
-    text-align: center;
-}

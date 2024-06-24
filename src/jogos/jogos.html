@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save On Your Game</title>
+    <link rel="stylesheet" href="jogos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <main>
+
+        <div id="modal-container"></div>
+
+        <aside>
+            <h2>Filtros</h2>
+            <form id="filter-form">
+                <fieldset>
+                    <legend>Loja</legend>
+                    <label><input type="checkbox" name="store" value="Steam"> Steam</label><br>
+                    <label><input type="checkbox" name="store" value="Epic Games"> Epic Games</label><br>
+                    <label><input type="checkbox" name="store" value="GOG"> GOG</label><br>
+                    <label><input type="checkbox" name="store" value="Microsoft Store"> Microsoft Store</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Preço</legend>
+                    <label><input type="radio" name="price" value="low"> Menor que R$ 50,00</label><br>
+                    <label><input type="radio" name="price" value="medium"> R$ 50,00 - R$ 100,00</label><br>
+                    <label><input type="radio" name="price" value="high"> Maior que R$ 100,00</label>
+                </fieldset>
+                <button type="submit">Aplicar Filtros</button>
+            </form>
+        </aside>
+        <section id="jogos">
+
+            <form id="search-form">
+                <label for="nome-jogo" class="busca">Buscar Jogo:</label>
+                <input type="text" id="nome-jogo" name="nome-jogo">
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultado">
+                <!-- Jogos serão inseridos aqui via JavaScript -->
+            </div>
+            <div id="pagination">
+                <!-- Paginação será inserida aqui via JavaScript -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="/modelo_landing_page.github.io/src/config/header-footer-import.js"></script>
+    <script src="/modelo_landing_page.github.io/src/modal/modal.js"></script>
+    <script src="jogos.js"></script>
+</body>
+
+</html>
