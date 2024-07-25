@@ -1,157 +1,188 @@
-  
-  main {
-    width: 100%;
-    overflow: hidden;
-  }
-  
-  aside {
-    max-width: 250px;
-    padding: 20px;
-    background-color: rgb(222, 222, 222);
-    border-right: 1px solid #ddd;
-    float: left;
-  }
-  
-  section#jogos {
-    margin-left: 270px;
-    padding: 20px;
-  }
-  
-  .game-card {
-    background-color:rgb(222, 222, 222);
-    border-radius: 5px;
-    box-shadow: 0 4px 5px rgb(52, 47, 48);
-    margin-top: 16px;
-    margin-bottom: 16px;
-    overflow: hidden;
-    position: relative;
-    display: table;
-    width: 100%;
-  }
-  
-  .img-container, .game-details, .price-history {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
-  .img-container {
-    padding: 10px;
-  }
-  
-  .img-container img {
-    height: 100px;
-    object-fit: cover;
-  }
-  
-  .game-details {
-    width: 40%;
-    padding: 10px;
-  }
-
-  .game-title{    
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  .fa-star {
-    cursor: pointer;
-    padding: 20px;
-    color: rgb(183, 181, 181);
-    text-shadow: #000000 0px 0px 1px;
-  }
-  
-  .favorite {
-    color: rgb(244, 244, 7);
-    text-shadow: #000000 0px 0px 2px;
-  }
-  
-  .price-history {
-    width: 40%;
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .min-price {
-    font-size: medium;
-  }
-  
-  .price-history .slider-container {
-    margin-top: 10px;
-  }
-  
-  #pagination {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  #pagination a {
-    color: white;
-    text-decoration-style: dashed;
-    font-weight: bold;
-    padding-inline: 10px;
-  }
-
-  #pagination :hover {
-    color: rgb(254, 61, 106);
-    font-weight: bold;
-    padding-inline: 10px;
-  }
-  
-  
-  
-  i {
-    font-size: medium;
-    padding-left: 15px;
-    float: right;
-  }
-
-  input[type="range"] {
-    display: block;
-    margin: 15px auto;
-    width: 50%;
-    appearance: none;
-  }
-  
-  input[type="range"]:focus {
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    cursor: pointer;
-    box-shadow: 0px 0px 0px #000000;
-    background: rgb(195, 3, 80);
-    border-radius: 1px;
-    border: 0px solid #000000;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    box-shadow: 0px 0px 0px #000000;
-    border: 1px solid rgb(195, 3, 80);
-    height: 18px;
-    width: 18px;
-    border-radius: 25px;        
-    background: rgb(195, 3, 80);
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -7px;
-  }
-
-
-.busca{
+main {
+  display: flex;
   width: 100%;
   overflow: hidden;
-  font-size: 20px;
+}
+
+aside {
+  margin-top: 16px;
+  max-width: 250px;
+  padding: 20px;
+  background-color: rgb(222, 222, 222);
+  border-right: 1px solid #ddd;
+  float: left;
+}
+
+section#jogos {
+  padding-inline: 1%;
+  width: 100%;
+}
+
+.game-card {
+  background-color: rgb(222, 222, 222);
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgb(52, 47, 48);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.img-container,
+.game-details,
+.price-history {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.img-container {
+  padding: 10px;
+}
+
+.img-container img {
+  height: 100px;
+  object-fit: cover;
+}
+
+.game-details {
+  width: 40%;
+  padding: 10px;
+}
+
+.game-title {
+  font-family: "Oswald", sans-serif;
+}
+
+.fa-star {
+  cursor: pointer;
+  padding: 20px;
+  color: rgb(183, 181, 181);
+  text-shadow: #000000 0px 0px 1px;
+}
+
+.favorite {
+  color: rgb(244, 244, 7);
+  text-shadow: #000000 0px 0px 2px;
+}
+
+.price-history {
+  width: 40%;
+  padding: 10px;
   text-align: center;
-  font-weight: bold;
+}
+
+.min-price {
+  font-size: medium;
+}
+
+.price-history .slider-container {
+  margin-top: 10px;
+}
+
+#pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#pagination a {
   color: white;
+  text-decoration-style: dashed;
+  font-weight: bold;
+  padding-inline: 10px;
+}
+
+#pagination :hover {
+  color: rgb(254, 61, 106);
+  font-weight: bold;
+  padding-inline: 10px;
+}
+
+i {
+  font-size: medium;
+  padding-left: 15px;
+  float: right;
+}
+
+input[type="range"] {
+  display: block;
+  margin: 15px auto;
+  width: 50%;
+  appearance: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgb(195, 3, 80);
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid rgb(195, 3, 80);
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: rgb(195, 3, 80);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
 }
 
 
-  
+.chart-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 
+.slider-container{
+  display: none;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+
+  }
+  aside{
+
+    margin: 16px;
+    max-width: 100%;
+  }
+  aside h2{
+    text-align: center;
+  }
   
+  #filter-form {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  #filter-form button{
+    height: min-content;
+    width:max-content;
+    padding-inline: 5px;
+
+  }
+  .chart-container{
+    display: none;
+  }
+
+  .slider-container{
+    display: block;
+  }
   
-  
-  
-  
+}

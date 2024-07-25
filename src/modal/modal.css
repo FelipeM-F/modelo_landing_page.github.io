@@ -33,6 +33,7 @@
     margin-top: 20px;
     border: 2px;
     border-radius: 10px;
+    padding: 1px 5px;
     cursor: pointer; 
     font-style: normal;
     font-weight: 700;
@@ -61,15 +62,16 @@
 
   #modal-message {
     max-width: max-content;
+    height: max-content;
     position: fixed;
     padding: 10px;
-    background-color: #323764;
+    background-color: #b8b8bc;
     top: 20%;
     z-index: 9999;
     text-align: center;
   }
   
   #message-text {
-    color: white;
+    color: rgb(0, 0, 0);
     display: inline;
   }

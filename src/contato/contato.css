@@ -1,14 +1,5 @@
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-}
-
-main { 
-    padding: 20px;
-    width: 100%;
-}
 
 .contact-form {
     background-color: #ffffff;
@@ -61,17 +52,4 @@ main {
     margin-right: 5px;
 }
 
-#modal-message {
-    max-width: max-content;
-    position: fixed;
-    padding: 10px;
-    background-color: #323764;
-    top: 20%;
-    z-index: 9999;
-    text-align: center;
-  }
-  
-  #message-text {
-    color: white;
-    display: inline;
-  }
+
