@@ -1,11 +1,11 @@
-@import url(/src/header/header.css);
+@import url(/modelo_landing_page.github.io/src/header/header.css);
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" );
-@import url(/src/footer/footer.css);
+@import url(/modelo_landing_page.github.io/src/footer/footer.css);
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
-@import url(/src/modal/modal.css);
-@import url(/src/sobre/sobre.css);
-@import url(/src/jogos/jogos.css);
-@import url(/src/contato/contato.css);
+@import url(/modelo_landing_page.github.io/src/modal/modal.css);
+@import url(/modelo_landing_page.github.io/src/sobre/sobre.css);
+@import url(/modelo_landing_page.github.io/src/jogos/jogos.css);
+@import url(/modelo_landing_page.github.io/src/contato/contato.css);
 
 * {
   margin: 0;
