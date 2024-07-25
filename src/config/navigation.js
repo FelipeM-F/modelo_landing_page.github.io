@@ -27,19 +27,19 @@ document.addEventListener("DOMContentLoaded", async () => {
   try {
 
     await Promise.all([
-      loadContent("/src/header/header.html", "header-container"),
-      loadContent("/src/footer/footer.html", "footer-container"),
-      loadContent("/src/modal/modal.html", "modal-container"),
+      loadContent("/modelo_landing_page.github.io/src/header/header.html", "header-container"),
+      loadContent("/modelo_landing_page.github.io/src/footer/footer.html", "footer-container"),
+      loadContent("/modelo_landing_page.github.io/src/modal/modal.html", "modal-container"),
     ]);
 
     const currentPath = window.location.pathname;
     await checkAndLoadScripts(currentPath); // Espera a execução da função de carga dos scripts
 
     const navLinks = {
-      "/": "nav-home",
-      "/src/jogos/jogos.html": "nav-jogos",
-      "/src/sobre/sobre.html": "nav-sobre",
-      "/src/contato/contato.html": "nav-contato",
+      "/modelo_landing_page.github.io/": "nav-home",
+      "/modelo_landing_page.github.io/src/jogos/jogos.html": "nav-jogos",
+      "/modelo_landing_page.github.io/src/sobre/sobre.html": "nav-sobre",
+      "/modelo_landing_page.github.io/src/contato/contato.html": "nav-contato",
     };
 
     document
@@ -85,8 +85,6 @@ async function checkAndLoadScripts(url) {
   }
 
   if (url.includes("/src/jogos/jogos.html")) {
-    console.log(url.includes("/src/jogos/jogos.html"));
-    console.log("Carregando scripts para jogos.html");
     await loadScriptOnce("/src/jogos/jogos.js");
     pageLoad();
   }
