@@ -85,7 +85,7 @@ async function checkAndLoadScripts(url) {
   }
 
   if (url.includes("/src/jogos/jogos.html")) {
-    await loadScriptOnce("/src/jogos/jogos.js");
+    await loadScriptOnce("/modelo_landing_page.github.io/src/jogos/jogos.js");
     pageLoad();
   }
 }
