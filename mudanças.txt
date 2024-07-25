@@ -1,0 +1,3 @@
+- Incorporação de bootstrap no header
+- Importado o estilo style.css em todas as páginas
+- Importação dos estilos do header e do footer no arquivo style.css

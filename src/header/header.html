@@ -1,35 +1,46 @@
 <header>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/modelo_landing_page.github.io/src/header/header.css" >
-    <nav>
-        <ul>
-            <li><a href="/modelo_landing_page.github.io/index.html">Home</a></li>
-            <li><a href="/modelo_landing_page.github.io/src/jogos/jogos.html">Jogos</a></li>
-            <li><a href="/modelo_landing_page.github.io/src/sobre/sobre.html">Sobre Nós</a></li>
-            <li><a href="/modelo_landing_page.github.io/src/contato/contato.html">Contato</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand page-logo" href="/modelo_landing_page.github.io/index.html"><img src="/modelo_landing_page.github.io/src/images/imagens-geradas/logo.png"
+                    alt="Save on Your Game"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="nav-home" class="nav-link" href="/modelo_landing_page.github.io/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-jogos" class="nav-link" href="/modelo_landing_page.github.io/src/jogos/jogos.html">Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-sobre" class="nav-link" href="/modelo_landing_page.github.io/src/sobre/sobre.html">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="nav-contato" class="nav-link" href="/modelo_landing_page.github.io/src/contato/contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fa-solid fa-user" id="user-icon" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#" onclick="openModal('modal-login')">Login</a></li>
+                            <li><a class="dropdown-item" href="#" onclick=excluirUsuário()>Excluir conta</a></li>
+                            <li><a class="dropdown-item" href="#">Configurações</a></li>
+                            <li><a class="dropdown-item" href="#"onclick="sair()">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-
-    <div class="page-logo">
-        <a href="/modelo_landing_page.github.io/index.html">
-            <img src="/modelo_landing_page.github.io/src/images/imagens-geradas/logo.png" alt="Save on Your Game">
-        </a>
-    </div>
-    <h1 class="title">
-        <a href="/modelo_landing_page.github.io/src/jogos/jogos.html" class="title-text">
-            <span class="highlight">Save</span>
-            <span class="low">on</span>
-            <span class="highlight">Your Game</span>
-        </a>
-    </h1>
-    <i class="fa-solid fa-user" id="user-icon"></i>
-
-
-    <ul id="user-menu" class="hidden">
-        <li><a onclick="openModal('modal-login')">Login</a></li>
-        <li><a >Perfil</a></li>
-        <li><a >Configurações</a></li>
-        <li><a >Sair</a></li>
-    </ul>
+    <form class="d-flex" id="search-form" action="/modelo_landing_page.github.io/src/jogos/jogos.html">
+        <label for="nome-jogo" class="busca">Buscar Jogo:</label>
+        <input class="form-control me-2"  type="search" id="nome-jogo" name="nome-jogo" placeholder="Pesquisar jogos...">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
 </header>
-
