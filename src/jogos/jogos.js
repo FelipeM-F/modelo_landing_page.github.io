@@ -54,17 +54,19 @@ function filterGames() {
 
     const users = JSON.parse(localStorage.getItem("users")) || [];
     const loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
-  
+    
     if (!loggedUser) {
       console.error("Nenhum usuário logado.");
+    } else{
+      
+      const userIndex = users.findIndex((user) => user.email === loggedUser.email);
+  
+      const favoriteGames = users[userIndex].favorites || [];
+      const isFavorite = favoriteGames.includes(game.title);
+      console.log("isFavorite:", isFavorite);
     }
   
-    const userIndex = users.findIndex((user) => user.email === loggedUser.email);
-  
-  
-    const favoriteGames = users[userIndex].favorites || [];
-    const isFavorite = favoriteGames.includes(game.title);
-    console.log("isFavorite:", isFavorite);
+    
     const matchesFavorites = !showFavoritesOnly || isFavorite;
 
     return matchesStore && matchesPrice && matchesFavorites;
