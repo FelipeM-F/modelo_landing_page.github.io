@@ -57,7 +57,6 @@ function filterGames() {
   
     if (!loggedUser) {
       console.error("Nenhum usuário logado.");
-      return;
     }
   
     const userIndex = users.findIndex((user) => user.email === loggedUser.email);

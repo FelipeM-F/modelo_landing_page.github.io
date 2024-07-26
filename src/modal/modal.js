@@ -37,7 +37,6 @@ function login(event) {
       openModalWithAutoClose("Usuário ou senha inválido!");
   }
 
-  console.log("Login do usuário:", { loginEmail, loginPassword });
   closeModal("modal-login");
   form.reset();
 }
