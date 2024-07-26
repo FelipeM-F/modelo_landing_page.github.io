@@ -61,10 +61,6 @@ function filterGames() {
   
     const userIndex = users.findIndex((user) => user.email === loggedUser.email);
   
-    if (userIndex === -1) {
-      console.error("Usuário logado não encontrado na lista de usuários.");
-      return;
-    }
   
     const favoriteGames = users[userIndex].favorites || [];
     const isFavorite = favoriteGames.includes(game.title);
